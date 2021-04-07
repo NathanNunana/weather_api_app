@@ -34,7 +34,7 @@ class HomePage extends StatelessWidget {
                 style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.w800,
-                    fontSize: 60),
+                    fontSize: 45),
               ),
               Text(
                 snapshot.data['current']['condition']['text'].toString(),
@@ -129,7 +129,7 @@ class HomePage extends StatelessWidget {
                     ),
                     Center(
                       child: Container(
-                        margin: EdgeInsets.only(top: 100, left: 10),
+                        margin: EdgeInsets.only(top: 100, left: 35),
                         child: Text(
                           "Sunyani Weather Forecast App",
                           style: TextStyle(
@@ -139,12 +139,15 @@ class HomePage extends StatelessWidget {
                         ),
                       ),
                     ),
+                    SizedBox(
+                      height: 40,
+                    ),
                     Positioned.fill(child: _currentReport(snapshot)),
                     SizedBox(
                       height: 20,
                     ),
                     Positioned(
-                      bottom: 0,
+                      bottom: -20,
                       left: 0,
                       right: 0,
                       child: Container(

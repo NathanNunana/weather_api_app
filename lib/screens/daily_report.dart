@@ -90,7 +90,10 @@ class DailyReport extends StatelessWidget {
                           ['condition']['text']
                       .toString(),
                   style: TextStyle(
-                      fontWeight: FontWeight.w800, color: Colors.black54))
+                      fontWeight: FontWeight.w800, color: Colors.black54)),
+              SizedBox(
+                height: 20,
+              )
             ],
           ),
         ),
